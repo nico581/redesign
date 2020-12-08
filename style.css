@@ -1,8 +1,3 @@
-img {
-    width: 700px;
-    height: 500px;
-}
-
 section {
     max-width: 1080px;
     margin: 0 auto;
@@ -43,38 +38,15 @@ nav a {
 
 }
 
-/* Om os section */
-
-#first_section .section_wrapper {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-gap: 5vw;
-}
-
-#first_section p {
-    margin-top: 8vw;
-}
-
-#first_section h2 {
-    position: absolute;
-    margin-left: 524px;
-    margin-top: 35px;
-    font-size: 45px;
-    color: #FAF2EC;
-    outline: 2px black;
-}
-
 /* footer */
 
-footer .section_wrapper {
+footer .footer {
     margin-top: 5vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 5vw;
     background-color: #FAF2EC;
 }
-
-
 
 footer h4 {
     text-align: center;
@@ -83,3 +55,55 @@ footer h4 {
 footer p {
     text-align: center;
 }
+
+
+/* Om os section */
+
+#om_os .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 5vw;
+}
+
+#om_os .section_wrapper p {
+    margin-top: 8vw;
+}
+
+#om_os .section_wrapper h2 {
+    position: absolute;
+    margin-left: 32.7rem;
+    margin-top: 1rem;
+    font-size: 45px;
+    color: #FAF2EC;
+}
+
+#om_os img {
+    width: 700px;
+    height: 500px;
+}
+
+
+/* Blomster Abonnement section */
+
+#blomster_abonnement .section_wrapper {
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 5vw;
+
+}
+
+#blomster_abonnement .section_wrapper p {
+    margin-top: 10rem;
+    font-size: 20px;
+}
+
+#blomster_abonnement .section_wrapper h2 {
+    position: absolute;
+    margin-left: 28.7rem;
+    margin-top: 1rem;
+    font-size: 45px;
+    color: #FAF2EC;
+}
+
+/* Bestil Blomster */
