@@ -1,0 +1,85 @@
+img {
+    width: 700px;
+    height: 500px;
+}
+
+section {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Navigation */
+.hidden {
+    opacity: 0;
+}
+
+nav {
+    text-align: center;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+
+#menuknap {
+    display: inline-block;
+    margin-top: 35px;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+#menu {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+#menu li {
+    display: inline-block;
+    font-size: 1vw;
+
+}
+
+/* Om os section */
+
+#first_section .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 5vw;
+}
+
+#first_section p {
+    margin-top: 8vw;
+}
+
+#first_section h2 {
+    position: absolute;
+    margin-left: 524px;
+    margin-top: 35px;
+    font-size: 45px;
+    color: #FAF2EC;
+    outline: 2px black;
+}
+
+/* footer */
+
+footer .section_wrapper {
+    margin-top: 5vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5vw;
+    background-color: #FAF2EC;
+}
+
+
+
+footer h4 {
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+}
