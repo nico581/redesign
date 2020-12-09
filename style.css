@@ -149,7 +149,6 @@ button {
 }
 
 
-
 /* Om os section 1 */
 
 #om_os .section_wrapper {
@@ -222,6 +221,21 @@ button {
 #bestil_blomster img {
     width: 600px;
     height: 1050px;
+}
+
+
+/*Tak for din bestilling */
+
+#tak .section_wrapper {
+    margin-bottom: 10rem;
+    text-align: center;
+}
+
+#tak a {
+    font-family: 'Assistant', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: #FDD882;
 }
 
 /* Media */

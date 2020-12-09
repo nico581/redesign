@@ -39,7 +39,7 @@
                     <p>Ønsker du at bestille en buket til afhentning hos os, skal du blot udfylde formularen herunder.
                         <br>Vi ser frem til at modtage din bestilling!
                     </p>
-                    <form name=“bestilling” netlify>
+                    <form action="tak.html" name=“bestilling” netlify>
 
                         <!--Pris for buket-->
                         <div class="felt">
@@ -75,14 +75,14 @@
                         <!--Dato for afhentning-->
                         <div class="felt">
                             <label>Dato for afhentning</label>
-                            <input type="date" id="dato" name="dato">
+                            <input type="date" id="dato" name="dato" required>
                         </div>
 
                         <!--Tidspunkt for afhentning-->
                         <div class="felt">
                             <label>Tidspunkt for afhenting</label>
                             <span>Afhentning uden for butikkens åbningstider kan ske efter aftale</span>
-                            <input type="time" id="tid" name="tid">
+                            <input type="time" id="tid" name="tid" required>
                         </div>
 
                         <!--Navn-->
