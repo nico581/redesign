@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <nav>
+        <div id="menuknap">☰</div>
+        <ul id="menu" class="hidden">
+            <li><a href="forside.html">Forside</a></li>
+            <li><a href="produkter.html">Produkter</a></li>
+            <li><a href="bestil_blomster.html">Bestil Blomster</a></li>
+            <li><a href="blomster_abonnement.html">Blomster Abonnement</a></li>
+            <li><a href="om_os.html">Om os</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+<body>
+    <main>
+        <section id="bestil_blomster">
+            <div class="section_wrapper">
+                <div class="col">
+                    <h2>Bestil <br> Blomster</h2>
+                    <img src="billeder/placeholder_bestilblomster.jpg" alt="Placeholder">
+                </div>
+                <div class="col">
+                    <p>Ønsker du at bestille en buket, skal du blot udfylde formularen herunder. Vi ser frem til at modtage din bestilling!</p>
+                    <form name=“kontakt” netlify>
+                        <!--Pris for buket-->
+                        <div class="felt">
+                            <label>Pris
+                                <select name="liste">
+                                    <option value="">Min. 150 kr.</option>
+                                    <option value="150 kr.">150 kr.</option>
+                                    <option value="200 kr.">200 kr.</option>
+                                    <option value="250 kr.">250 kr.</option>
+                                    <option value="300 kr.">300 kr.</option>
+                                    <option value="350 kr.">350 kr.</option>
+                                    <option value="400 kr.">400 kr.</option>
+                                    <option value="450 kr.">450 kr.</option>
+                                    <option value="500 kr.">500 kr.</option>
+                                </select></label>
+                        </div>
+
+                        <!--afhentning eller levering-->
+                        <div class="felt"></div>
+
+                        <!--Dato & tidspunkt-->
+                        <div class="felt"></div>
+
+                        <!--Tekstfelt-->
+                        <div class=“felt”>
+                            <label>Besked
+                                <textarea name=“besked” rows=“5”></textarea></label>
+                        </div>
+
+                        <!--Navn-->
+                        <div class=“felt”>
+                            <label>Navn</label>
+                            <input type=“text” id=“navn” name=“name”>
+                        </div>
+
+                        <!--Email-->
+                        <div class=“felt”>
+                            <label> Email </label>
+                            <input type=“email” id=“email” name=“email ”>
+                        </div>
+
+                        <!--Telefonnr.-->
+                        <div class="felt"></div>
+
+                        <!--Adresse-->
+                        <div class="felt"></div>
+                        <!--Postnr.-->
+                        <div class="felt"></div>
+
+
+                        <button>Send</button>
+
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="col">
+                <h4>Åbningstider</h4>
+                <p>Mandag - Lukket</p>
+                <p>Tirsdag - 10.00 - 17.30</p>
+                <p>Onsdag - 10.00 - 17.30</p>
+                <p>Torsdag - 10.00 - 17.30</p>
+                <p>Fredag - 10.00 - 17.30</p>
+                <p>Lørdag - 09.30 - 14.00</p>
+                <p>Søndag - Lukket</p>
+            </div>
+            <div class="col">
+                <h4>Adresse</h4>
+                <p>
+                    Klosterengen 60
+                </p>
+                <p>
+                    4000 Roskilde
+                </p>
+                <h4> CVR-nr.</h4>
+                <p>32027946</p>
+
+            </div>
+            <div class="col">
+                <h4>Betaling</h4>
+                <p>Mobilepay +45 42 34 07 05</p>
+                <p>Bankoverførsel til Nordea</p>
+                <p>Reg nr. 2280</p>
+                <p>Konto nr. 43 80 75 32 22</p>
+                <p>Betalingskort - vi tager alle slags kort i butikken</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

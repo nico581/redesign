@@ -57,7 +57,19 @@ footer p {
 }
 
 
-/* Om os section */
+/* Form */
+label,
+input,
+button,
+textarea {
+    display: block;
+}
+
+input {
+    width: 300px;
+}
+
+/* Om os section 1 */
 
 #om_os .section_wrapper {
     display: grid;
@@ -102,8 +114,29 @@ footer p {
     position: absolute;
     margin-left: 28.7rem;
     margin-top: 1rem;
-    font-size: 45px;
+    font-size: 60px;
     color: #FAF2EC;
 }
 
 /* Bestil Blomster */
+
+#bestil_blomster .section_wrapper {
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 5vw;
+
+}
+
+#bestil_blomster .section_wrapper p {
+    margin-top: 10rem;
+    font-size: 20px;
+}
+
+#bestil_blomster .section_wrapper h2 {
+    position: absolute;
+    margin-left: 29rem;
+    margin-top: 1rem;
+    font-size: 60px;
+    color: #FAF2EC;
+}
