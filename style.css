@@ -3,7 +3,7 @@
 section {
     max-width: 1080px;
     margin: 0 auto;
-    padding: 10px;
+    padding: 2rem;
 }
 
 p {
@@ -23,6 +23,12 @@ h4 {
 
 }
 
+nav a {
+    font-family: 'Baskervville', serif;
+}
+
+
+
 /* Navigation */
 
 .hidden {
@@ -32,13 +38,14 @@ h4 {
 
 nav {
     text-align: center;
-
+    padding: 2rem;
 }
 
 nav a {
     text-decoration: none;
     color: black;
     padding: 20px;
+    font-size: 20px;
 }
 
 #menuknap {
@@ -61,41 +68,8 @@ nav a {
 
 }
 
-.hidden {
-    opacity: 0;
-    transform: translateX(-100%);
-}
 
-nav {
-    text-align: center;
 
-}
-
-nav a {
-    text-decoration: none;
-    color: black;
-    padding: 20px;
-}
-
-#menuknap {
-    display: inline-block;
-    margin-top: 35px;
-    font-size: 35px;
-    cursor: pointer;
-}
-
-#menu {
-    list-style-type: none;
-    text-decoration: none;
-    transition: transform 0.3s;
-    transform-origin: top left;
-}
-
-#menu li {
-    display: inline-block;
-    font-size: 1vw;
-
-}
 
 /* footer */
 
@@ -115,6 +89,8 @@ footer p {
     text-align: center;
     font-size: 14px;
 }
+
+
 
 
 /* Form */
@@ -148,6 +124,7 @@ select {
 
 label {
     margin-top: 1rem;
+    margin-bottom: 0.1rem;
     font-size: 16px;
     font-family: 'Assistant', sans-serif;
 }
@@ -159,14 +136,18 @@ span {
 }
 
 button {
-    margin-top: 1rem;
+    margin-top: 3rem;
+    margin-left: 8rem;
     border: 0;
     border-radius: 4px;
     padding: .75rem 2rem;
     background-color: #FDD882;
     font-family: 'Assistant', sans-serif;
     font-size: 16px;
+    cursor: pointer;
+
 }
+
 
 
 /* Om os section 1 */
@@ -189,7 +170,7 @@ button {
 
 #om_os img {
     width: 700px;
-    height: 500px;
+    height: 700px;
 }
 
 
@@ -213,6 +194,11 @@ button {
     margin-top: 1rem;
 }
 
+#blomster_abonnement img {
+    width: 600px;
+    height: 1050px;
+}
+
 /* Bestil Blomster */
 
 #bestil_blomster .section_wrapper {
@@ -232,6 +218,13 @@ button {
     margin-left: 29rem;
     margin-top: 1rem;
 }
+
+#bestil_blomster img {
+    width: 600px;
+    height: 1050px;
+}
+
+/* Media */
 
 @media (min-width:1080px) {
     #menuknap {

@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Baskervville&display=swap" rel="stylesheet">
+
 </head>
 <header>
     <nav>
@@ -34,7 +35,7 @@
                     <h2>Blomster
                         <br> Abonnement
                     </h2>
-                    <img src="billeder/placeholder_blomsterabonnement.jpg" alt="Placeholder">
+                    <img src="billeder/blomsterabonnement.png" alt="Placeholder">
                 </div>
                 <div class="col">
                     <p>
@@ -48,7 +49,42 @@
                         Minimumsprisen på blomsterbestillingen skal være fra DKK 150,-
                         <br>
                         Erhvervsabonnements regninger sendes en gang om måneden.
+                        <br>
+                        <br>
+                        Er du interesseret i et Blomster Abonnement?
+                        <br>
+                        Så udfyld nedstående formular, så tager vi kontakt til dig
                     </p>
+                    <form name="kontakt">
+
+                        <!--Fulde navn-->
+                        <div class="felt">
+                            <label>Fulde Navn</label>
+                            <input placeholder="fx. Pia Hansen" type=“text” id=“name” name=“name” required>
+                        </div>
+
+                        <!--Firma/institution-->
+                        <div class="felt">
+                            <label>Firma/Institution</label>
+                            <span>Ikke nødvendigt ved privat person</span>
+                            <input placeholder="fx. Esperance Blomster" type=“text” id=“name” name=“name”>
+                        </div>
+
+                        <!--Telefonnr.-->
+                        <div class="felt">
+                            <label>Telefon nr.</label>
+                            <input placeholder="fx. 46 35 51 62" type="tel" id="telefon" name="telefon" required>
+                        </div>
+
+                        <!--Email-->
+                        <div class=“felt”>
+                            <label> Email </label>
+                            <input placeholder="esperanceblomster@gmail.com" type=“email” id=“email” name=“email” required>
+                        </div>
+
+                        <button>Send Formular</button>
+
+                    </form>
                 </div>
             </div>
         </section>
@@ -73,6 +109,9 @@
                 <p>
                     4000 Roskilde
                 </p>
+                <h4>Kontakt</h4>
+                <p>Tlf. +45 46 35 51 62</p>
+                <p>Email - Esperanceblomster@gmail.com</p>
                 <h4> CVR-nr.</h4>
                 <p>32027946</p>
 
