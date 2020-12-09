@@ -1,12 +1,33 @@
+/* Overordnet Html */
+
 section {
     max-width: 1080px;
     margin: 0 auto;
     padding: 10px;
 }
 
+p {
+    font-family: 'Assistant', sans-serif;
+    font-size: 20px;
+}
+
+h2 {
+    color: #FDD882;
+    font-size: 60px;
+    font-family: 'Baskervville', serif;
+}
+
+h4 {
+    font-size: 16px;
+    font-family: 'Baskervville', serif;
+
+}
+
 /* Navigation */
+
 .hidden {
     opacity: 0;
+    transform: translateX(-100%);
 }
 
 nav {
@@ -30,6 +51,44 @@ nav a {
 #menu {
     list-style-type: none;
     text-decoration: none;
+    transition: transform 0.3s;
+    transform-origin: top left;
+}
+
+#menu li {
+    display: inline-block;
+    font-size: 1vw;
+
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+nav {
+    text-align: center;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+
+#menuknap {
+    display: inline-block;
+    margin-top: 35px;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+#menu {
+    list-style-type: none;
+    text-decoration: none;
+    transition: transform 0.3s;
+    transform-origin: top left;
 }
 
 #menu li {
@@ -45,7 +104,7 @@ footer .footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 5vw;
-    background-color: #FAF2EC;
+    background-color: #D9C9C1;
 }
 
 footer h4 {
@@ -54,20 +113,61 @@ footer h4 {
 
 footer p {
     text-align: center;
+    font-size: 14px;
 }
 
 
 /* Form */
+
 label,
 input,
 button,
-textarea {
+textarea,
+select {
     display: block;
+    font-family: 'Assistant', sans-serif;
 }
 
 input {
-    width: 300px;
+    width: 100%;
+    font-size: 14px;
+    padding: 0.5rem;
+    border: solid;
+    border-width: 1px;
 }
+
+textarea {
+    width: 100%;
+    resize: none;
+}
+
+select {
+    width: 100%;
+    font-size: 16px;
+}
+
+label {
+    margin-top: 1rem;
+    font-size: 16px;
+    font-family: 'Assistant', sans-serif;
+}
+
+span {
+    font-size: 14px;
+    color: grey;
+    font-family: 'Assistant', sans-serif;
+}
+
+button {
+    margin-top: 1rem;
+    border: 0;
+    border-radius: 4px;
+    padding: .75rem 2rem;
+    background-color: #FDD882;
+    font-family: 'Assistant', sans-serif;
+    font-size: 16px;
+}
+
 
 /* Om os section 1 */
 
@@ -78,15 +178,13 @@ input {
 }
 
 #om_os .section_wrapper p {
-    margin-top: 8vw;
+    margin-top: 7rem;
 }
 
 #om_os .section_wrapper h2 {
     position: absolute;
     margin-left: 32.7rem;
     margin-top: 1rem;
-    font-size: 45px;
-    color: #FAF2EC;
 }
 
 #om_os img {
@@ -106,16 +204,13 @@ input {
 }
 
 #blomster_abonnement .section_wrapper p {
-    margin-top: 10rem;
-    font-size: 20px;
+    margin-top: 12rem;
 }
 
 #blomster_abonnement .section_wrapper h2 {
     position: absolute;
     margin-left: 28.7rem;
     margin-top: 1rem;
-    font-size: 60px;
-    color: #FAF2EC;
 }
 
 /* Bestil Blomster */
@@ -129,14 +224,24 @@ input {
 }
 
 #bestil_blomster .section_wrapper p {
-    margin-top: 10rem;
-    font-size: 20px;
+    margin-top: 12rem;
 }
 
 #bestil_blomster .section_wrapper h2 {
     position: absolute;
     margin-left: 29rem;
     margin-top: 1rem;
-    font-size: 60px;
-    color: #FAF2EC;
+}
+
+@media (min-width:1080px) {
+    #menuknap {
+        display: none;
+    }
+
+    #menu.hidden {
+        transform: translateX(0);
+        opacity: 1;
+
+    }
+
 }

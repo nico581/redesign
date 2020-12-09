@@ -2,10 +2,15 @@
 <html lang="da">
 
 <head>
+    <meta name="robots" content="noindex">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville&display=swap" rel="stylesheet">
 </head>
 <header>
     <nav>
@@ -26,64 +31,89 @@
         <section id="bestil_blomster">
             <div class="section_wrapper">
                 <div class="col">
-                    <h2>Bestil <br> Blomster</h2>
+                    <h2>Bestil Blomster <br> Til Afhentning</h2>
                     <img src="billeder/placeholder_bestilblomster.jpg" alt="Placeholder">
                 </div>
                 <div class="col">
-                    <p>Ønsker du at bestille en buket, skal du blot udfylde formularen herunder. Vi ser frem til at modtage din bestilling!</p>
-                    <form name=“kontakt” netlify>
+                    <p>Ønsker du at bestille en buket til afhentning hos os, skal du blot udfylde formularen herunder.
+                        <br>Vi ser frem til at modtage din bestilling!
+                    </p>
+
+                    <form name=“bestilling” netlify>
+
                         <!--Pris for buket-->
                         <div class="felt">
-                            <label>Pris
-                                <select name="liste">
-                                    <option value="">Min. 150 kr.</option>
-                                    <option value="150 kr.">150 kr.</option>
-                                    <option value="200 kr.">200 kr.</option>
-                                    <option value="250 kr.">250 kr.</option>
-                                    <option value="300 kr.">300 kr.</option>
-                                    <option value="350 kr.">350 kr.</option>
-                                    <option value="400 kr.">400 kr.</option>
-                                    <option value="450 kr.">450 kr.</option>
-                                    <option value="500 kr.">500 kr.</option>
-                                </select></label>
+                            <label>Pris</label>
+                            <select name="liste">
+                                <option value="">Min. 150 kr.</option>
+                                <option value="150 kr.">150 kr.</option>
+                                <option value="200 kr.">200 kr.</option>
+                                <option value="250 kr.">250 kr.</option>
+                                <option value="300 kr.">300 kr.</option>
+                                <option value="350 kr.">350 kr.</option>
+                                <option value="400 kr.">400 kr.</option>
+                                <option value="450 kr.">450 kr.</option>
+                                <option value="500 kr.">500 kr.</option>
+                            </select>
                         </div>
 
-                        <!--afhentning eller levering-->
-                        <div class="felt"></div>
+                        <!--Farvenuance-->
+                        <div class="felt">
+                            <label>Farvenuance</label>
+                            <span>Se evt. vores udvalg under 'produkter'</span>
+                            <select name="liste">
+                                <option value="">Fx. Hvide/lyse</option>
+                                <option value="Hvide/lyse">Hvide/lyse</option>
+                                <option value="Lyserøde/pink">Lyserøde/pink</option>
+                                <option value="Rødlige">Rødlige</option>
+                                <option value="Lilla/Blålige">Lilla/Blålige</option>
+                                <option value="Orange/Gulige">Orange/Gulige</option>
+                                <option value="Floristens Valg">Floristens Valg</option>
+                            </select>
+                        </div>
 
-                        <!--Dato & tidspunkt-->
-                        <div class="felt"></div>
+                        <!--Dato for afhentning-->
+                        <div class="felt">
+                            <label>Dato for afhentning</label>
+                            <input type="date" id="dato" name="dato">
+                        </div>
 
-                        <!--Tekstfelt-->
-                        <div class=“felt”>
-                            <label>Besked
-                                <textarea name=“besked” rows=“5”></textarea></label>
+                        <!--Tidspunkt for afhentning-->
+                        <div class="felt">
+                            <label>Tidspunkt for afhenting</label>
+                            <span>Afhentning uden for butikkens åbningstider kan ske efter aftale</span>
+                            <input type="time" id="tid" name="tid">
                         </div>
 
                         <!--Navn-->
                         <div class=“felt”>
-                            <label>Navn</label>
-                            <input type=“text” id=“navn” name=“name”>
+                            <label>Fulde navn</label>
+                            <input placeholder="fx. Pia Hansen" type=“text” id=“name” name=“name” required>
+                        </div>
+
+
+                        <!--Telefonnr.-->
+                        <div class="felt">
+                            <label>Telefon nr.</label>
+                            <input placeholder="fx. 46 35 51 62" type="tel" id="telefon" name="telefon" required>
                         </div>
 
                         <!--Email-->
                         <div class=“felt”>
                             <label> Email </label>
-                            <input type=“email” id=“email” name=“email ”>
+                            <input placeholder="esperanceblomster@gmail.com" type=“email” id=“email” name=“email” required>
                         </div>
 
-                        <!--Telefonnr.-->
-                        <div class="felt"></div>
+                        <!--Tekstfelt-->
+                        <div class=“felt”>
+                            <label>Eventuelle ønsker eller kommentarer</label>
+                            <span>Fx. specifikke blomsterønsker</span>
+                            <textarea name=“besked” rows=“10”></textarea>
+                        </div>
 
-                        <!--Adresse-->
-                        <div class="felt"></div>
-                        <!--Postnr.-->
-                        <div class="felt"></div>
+                        <button>Send bestilling</button>
 
-
-                        <button>Send</button>
-
-
+                    </form>
                 </div>
             </div>
         </section>
